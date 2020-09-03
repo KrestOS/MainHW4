@@ -3,6 +3,19 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextArea?>
+<?import java.net.URL?>
+<AnchorPane fx:controller="sample.Controller" xmlns:fx="http:javafx.com/fxml">
+    <stylesheets>
+        <URL value="@/sample/style.css"/>
+    </stylesheets>
+    <TextArea fx:id="textArea" focusTraversable="false" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="80" editable="false"/>
+    <TextField fx:id="textField" onAction="#onTextField" AnchorPane.leftAnchor="20" AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="100"/>
+    <Button fx:id="btnSend" onAction="#onClickBtn" text="Send" AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="20"/>
+</AnchorPane>

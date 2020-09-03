@@ -1,0 +1,28 @@
+.root{
+    -fx-font-size: 20;
+    -fx-background-color: gray;
+    -fx-highlight-text-fill: white;
+
+}
+
+.button{
+-fx-background-color: white;
+    -fx-text-fill: black;
+
+}
+.button:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.text-field{
+    -fx-background-color: white;
+     -fx-highlight-fill: black;
+
+}
+
+.text-area{
+ -fx-background-color: black;
+ -fx-highlight-fill: black;
+ -fx-font-size: 28;
+
+}
